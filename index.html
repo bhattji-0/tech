@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        .header1
+        {
+            margin-top: 10px;
+        }
+        .D1 img
+        {
+            height: 50px;
+            width: 400px;
+        }
+        .D1
+        {
+            flex: 50%;
+            margin-left: 50px;
+        }
+        .D2
+        {
+            display: flex;
+            flex: 50%;
+            margin-top: 8px;
+        }
+        .D2 li
+        {
+            list-style: none;
+        }
+        .D2 a
+        {
+            text-decoration: none;
+            color: #f35353;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .main-header
+        {
+            display: flex;
+        }
+        .Tech
+        {
+            text-align: center;
+            background-color: black;
+            color: #ffff;
+            font-weight: 700;
+        }
+        .d1
+        {
+            background: url(https://saitm.ac.in/media/files/transport-1920-650.jpg);
+            height: 500px;
+            background-repeat: no-repeat;
+            width: 1519px;
+        }
+        .d1 button 
+        {
+            height: 50px;
+            width: 250px;
+            border-radius: 15px;
+            border-style: none;
+            margin-left: 650px;
+            margin-top: 100px;
+        }
+        .d1 a
+        {
+            text-align: center;
+            text-decoration: none;
+            color: #f35353;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        .d1 button:hover
+        {
+            text-align: center;
+            text-decoration: none;
+            background-color: black;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .Aboutus h1
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            font-weight: 900;
+            margin-left: 650px;
+        }
+        .Aboutus pre h3
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: 900;
+          
+        }
+        .Aboutus pre
+        {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          margin-left: 400px;
+        }
+        h1
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            font-weight: 900;
+            margin-left: 550px;
+        }
+        .members
+        {
+            display: flex;
+            margin-left: 40px; 
+        }
+        .line2
+        {
+            display: flex;
+            margin-left: 40px; 
+        }
+        .media
+        {
+            display: flex;
+        }
+        .media a img
+        {
+            height: 50px;
+            width: 50px;
+            margin-left: 200px;
+        }
+        .events
+        {
+            height: 550px;
+            width: 1520px;
+            background-color: yellow;
+        }
+        .events h1
+        {
+            
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 60px;
+            font-weight: 900;
+            margin-left: 400px;
+        
+        }
+        .background
+        {
+            height: 480px;
+            width: 350px;
+            background-color: yellow;
+            border-radius: 40px;
+        }
+        .bhatt1
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt1 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -40px;
+            margin-top: 30px;
+        }
+        .bhatt1 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt1 figcaption
+        {
+            margin-left: -20px;
+        }
+        .bhatt2
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt2 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -55px;
+            margin-top: 30px;
+        }
+        .bhatt2 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt2 figcaption
+        {
+            margin-left: -20px;
+        }   
+         .bhatt3
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt3 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -70px;
+            margin-top: 30px;
+        }
+        .bhatt3 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt3 figcaption
+        {
+            margin-left: -20px;
+        }    .bhatt4
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt4 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -55px;
+            margin-top: 30px;
+        }
+        .bhatt4 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt4 figcaption
+        {
+            margin-left: -20px;
+        }    .bhatt5
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt5 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -70px;
+            margin-top: 30px;
+        }
+        .bhatt5 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt5 figcaption
+        {
+            margin-left: -20px;
+        }    .bhatt6
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt6 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -60px;
+            margin-top: 30px;
+        }
+        .bhatt6 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt6 figcaption
+        {
+            margin-left: -40px;
+        }
+        .bhatt7
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt7 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -40px;
+            margin-top: 30px;
+        }
+        .bhatt7 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt7 figcaption
+        {
+            margin-left: -40px;
+        }
+        .bhatt8
+        {
+            margin-left: 70px;
+            margin-top: 40px;
+        }
+        .bhatt8 pre
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-left: -50px;
+            margin-top: 30px;
+        }
+        .bhatt8 img
+        {
+            margin-right: 100px;
+            border-radius: 40px;
+            border: white;
+        }
+        .bhatt8 figcaption
+        {
+            margin-left: -40px;
+        }
+        .president
+        {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="Tech">
+      TECH CLUB 
+    </div>
+    <div class="header1">
+        <header>
+            <div class="main-header">
+                <div class="D1">
+                    <img src="Assets/Images/logo.png" alt="">
+                </div>
+                <div class="D2">
+                  <li><a href="">About Us</a></li><blockquote></blockquote>
+                  <li><a href="">Our Members</a></li><blockquote></blockquote>
+                  <li><a href="">Social Media</a></li><blockquote></blockquote>
+                  <li><a href="">Our Events</a></li><blockquote></blockquote>                 
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="d1">
+      <button><a href="">Know  More  About  Our  College</a></button>
+    </div>
+    <div class="Aboutus">
+      <h1>ABOUT US</h1>
+      <pre>
+The BCA Department of St. Andrews Institute of Technology and Management ( Delhi Campus)
+is organizing this club for the first time. 
+To enhance the technical skills and competitive skills in students BCA department.
+This club is formed to organize IT event and Technical activities. 
+The main aim of the department is to organize at least two event on every month.
+We are hoping that students will participate enthusiastically with a zeal to 
+compete with each other by giving their best in all events. 
+<h3>What activities will be held in an event?</h3>
+We will organize 
+<br>
+<li>IT quizzes</li>
+<li>Extempore</li>
+<li>Hackathon</li>
+<li>Seminars related to students betterment</li>
+      </pre>
+    </div>
+    <h1>OUR MEMBERS</h1>
+    <div class="president">
+        <blockquote></blockquote>
+        <blockquote></blockquote>
+        <blockquote></blockquote>
+        <div class="background">
+            <div class="bhatt7">
+                <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                <figcaption>
+                    <pre>
+    Lorem ipsum dolor sit amet consectetur adipisic
+    ing elit. Atque quo iure, nihil numquam nisi as
+    periores necessitatibus magni deleniti a magnam
+    , perspiciatis accusamus hic repudiandae saepe 
+    neque porro dolore quia aliquid?
+                </pre>
+                </figcaption>
+            </div>
+            </div>
+            <blockquote></blockquote>
+        <blockquote></blockquote>
+        <blockquote></blockquote>
+        <blockquote></blockquote>
+            <div class="background">
+                <div class="bhatt8">
+                    <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                    <figcaption>
+                        <pre>
+        Lorem ipsum dolor sit amet consectetur adipisic
+        ing elit. Atque quo iure, nihil numquam nisi as
+        periores necessitatibus magni deleniti a magnam
+        , perspiciatis accusamus hic repudiandae saepe 
+        neque porro dolore quia aliquid?
+                    </pre>
+                    </figcaption>
+                </div>
+                </div>
+               
+    </div>
+    </div>
+    <br><br><br>
+    <div class="members">
+        <div class="background">
+        <div class="bhatt1">
+            <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+            <figcaption>
+                <pre>
+Lorem ipsum dolor sit amet consectetur adipisic
+ing elit. Atque quo iure, nihil numquam nisi as
+periores necessitatibus magni deleniti a magnam
+, perspiciatis accusamus hic repudiandae saepe 
+neque porro dolore quia aliquid?
+            </pre>
+            </figcaption>
+        </div>
+        </div>
+        <blockquote></blockquote>
+        <blockquote></blockquote>
+        <div class="background">
+            <div class="bhatt2">
+                <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                <figcaption>
+                    <pre>
+    Lorem ipsum dolor sit amet consectetur adipisic
+    ing elit. Atque quo iure, nihil numquam nisi as
+    periores necessitatibus magni deleniti a magnam
+    , perspiciatis accusamus hic repudiandae saepe 
+    neque porro dolore quia aliquid?
+                </pre>
+                </figcaption>
+            </div>
+            </div>
+        <blockquote></blockquote>
+        <blockquote></blockquote>        <div class="background">
+                <div class="bhatt3">
+                    <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                    <figcaption>
+                        <pre>
+        Lorem ipsum dolor sit amet consectetur adipisic
+        ing elit. Atque quo iure, nihil numquam nisi as
+        periores necessitatibus magni deleniti a magnam
+        , perspiciatis accusamus hic repudiandae saepe 
+        neque porro dolore quia aliquid?
+                    </pre>
+                    </figcaption>
+                </div>
+                </div>
+        <blockquote></blockquote>
+        <blockquote></blockquote>
+    </div>
+    <br><br><br>     
+    <div class="line2">
+        <div class="background">
+            <div class="bhatt4">
+                <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                <figcaption>
+                    <pre>
+    Lorem ipsum dolor sit amet consectetur adipisic
+    ing elit. Atque quo iure, nihil numquam nisi as
+    periores necessitatibus magni deleniti a magnam
+    , perspiciatis accusamus hic repudiandae saepe 
+    neque porro dolore quia aliquid?
+                </pre>
+                </figcaption>
+            </div>
+            </div>
+        <blockquote></blockquote>
+        <blockquote></blockquote>        <div class="background">
+                <div class="bhatt5">
+                    <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                    <figcaption>
+                        <pre>
+        Lorem ipsum dolor sit amet consectetur adipisic
+        ing elit. Atque quo iure, nihil numquam nisi as
+        periores necessitatibus magni deleniti a magnam
+        , perspiciatis accusamus hic repudiandae saepe 
+        neque porro dolore quia aliquid?
+                    </pre>
+                    </figcaption>
+                </div>
+                </div>
+        <blockquote></blockquote>
+        <blockquote></blockquote>        <div class="background">
+                    <div class="bhatt6">
+                        <img src="assets/Images/2022-6460.jpg" alt="" height="250px" width="200px">
+                        <figcaption>
+                            <pre>
+            Lorem ipsum dolor sit amet consectetur adipisic
+            ing elit. Atque quo iure, nihil numquam nisi as
+            periores necessitatibus magni deleniti a magnam
+            , perspiciatis accusamus hic repudiandae saepe 
+            neque porro dolore quia aliquid?
+                        </pre>
+                        </figcaption>
+                    </div>
+                    </div>
+                    <blockquote></blockquote>
+    </div>
+ 
+
+<div class="events">
+     <h1>EVENTS ORGANIZED BY US</h1>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="media">
+    <blockquote></blockquote>
+    <blockquote></blockquote>
+    <blockquote></blockquote>
+    <blockquote></blockquote>
+    <div class="instagram">
+     <a href=""><img src="Assets/Images/instagram.png" alt=""></a>
+    </div>
+    <div class="instagram">
+        <a href=""><img src="Assets/Images/facebook.png" alt=""></a>
+       </div>
+       <div class="instagram">
+        <a href=""><img src="Assets/Images/twitter.png" alt=""></a>
+       </div>
+       </div>
+</div>
+<hr>
